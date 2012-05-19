@@ -105,7 +105,7 @@ IFRAMED_REWRITES = {
 }
 # Defines manual overrides for URL reversal. Optional.
 
-IFRAMED_DEFAULT_BASE = 'http://localhost:8000'
+IFRAMED_DEFAULT_BASE = 'http://www.commondomain.com'
 # Defines fallback base domain to be used for reversed URLs if the
 # `HTTP_REFERER` request header was not defined. Optional.
 ```

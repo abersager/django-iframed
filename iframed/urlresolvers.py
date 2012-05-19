@@ -11,7 +11,7 @@ def reverse(viewname, request=None, use_default_base=False, *args, **kwargs):
     """
     Django reverse lookup that returns URLs suitable for iframe-embedding
     """
-
+    
     # perform standard reverse lookup and strip out script_prefix
     absolute_url = django_reverse(viewname, *args, **kwargs)
     script_prefix = get_script_prefix()
@@ -65,6 +65,3 @@ def reverse(viewname, request=None, use_default_base=False, *args, **kwargs):
         # referer not set but required, fall back to standard URL
         return absolute_url
         
-    
-
-
